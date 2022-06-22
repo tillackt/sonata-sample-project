@@ -1,0 +1,11 @@
+sonata_user:
+  class:
+    user: App\Entity\SonataUserUser
+  mailer: sonata.user.mailer.default
+  impersonating:
+    route: sonata_admin_dashboard
+  resetting:
+    email:
+      address: sonata@localhost
+      sender_name: Sonata Admin
+  security_acl: false
